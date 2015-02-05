@@ -5,7 +5,7 @@ MAINTAINER Bertrand Bordage, bordage.bertrand@gmail.com
 RUN apt-get update \
     && apt-get -y upgrade \
     && apt-get -y install postgresql postgresql-server-dev-9.4 build-essential \
-                          python2.7 python-pip python-dev python-opencv python-numpy \
+                          python-pip python-dev python-opencv python-numpy \
     && apt-get -y build-dep pillow \
     && apt-get clean \
     && apt-get -y autoremove
